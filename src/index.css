@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles below if needed */
+.duration-4000 {
+  transition-duration: 4000ms;
+}
+
+.duration-6000 {
+  transition-duration: 6000ms;
+}
+
+.breathing-circle {
+  transition-timing-function: ease-in-out;
+}
+
+.breathing-circle.inhale {
+  transition-duration: 4000ms;
+}
+
+.breathing-circle.exhale {
+  transition-duration: 6000ms;
+}
+
+/* Rain Animation */
+@keyframes rain {
+  0% {
+    transform: translateY(0) rotate(10deg);
+  }
+  100% {
+    transform: translateY(100vh) rotate(10deg);
+  }
+}
+
+.raindrop {
+  animation: rain 1.5s linear infinite;
+  transform-origin: center;
+  will-change: transform;
+}
