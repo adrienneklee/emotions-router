@@ -60,7 +60,15 @@ function OverthinkingPage() {
             })
           })
         }
+        // Clear the form
         setCurrentNote('')
+        // Reset form element
+        e.target.reset()
+        // Clear textarea value explicitly
+        const textarea = document.querySelector('textarea')
+        if (textarea) {
+          textarea.value = ''
+        }
       } catch (error) {
         console.error('Error saving note:', error)
       }

@@ -60,7 +60,15 @@ function SadPage() {
             })
           })
         }
+        // Clear the form
         setCurrentGratitude('')
+        // Reset form element
+        e.target.reset()
+        // Clear textarea value explicitly
+        const textarea = document.querySelector('textarea')
+        if (textarea) {
+          textarea.value = ''
+        }
       } catch (error) {
         console.error('Error saving gratitude:', error)
       }
