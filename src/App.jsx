@@ -5,6 +5,7 @@ import AnxiousPage from './pages/AnxiousPage'
 import LazyPage from './pages/LazyPage'
 import OverthinkingPage from './pages/OverthinkingPage'
 import SadPage from './pages/SadPage'
+import ImpatientPage from './pages/ImpatientPage'
 
 function EmotionsButtons() {
   const navigate = useNavigate()
@@ -17,7 +18,7 @@ function EmotionsButtons() {
     { name: 'Stressed', style: 'bg-teal-500 hover:bg-teal-600' },
     { name: 'Sad', style: 'bg-yellow-500 hover:bg-yellow-600', route: '/sad' },
     { name: 'Lazy', style: 'bg-[#5fa8d3] hover:bg-[#4c91bc]', route: '/lazy' },
-    { name: 'Impatient', style: 'bg-[#eaac8b] hover:bg-[#e09b77]' }
+    { name: 'Impatient', style: 'bg-[#eaac8b] hover:bg-[#e09b77]', route: '/impatient' }
   ]
 
   return (
@@ -50,6 +51,7 @@ function App() {
         <Route path="/lazy" element={<LazyPage />} />
         <Route path="/overthinking" element={<OverthinkingPage />} />
         <Route path="/sad" element={<SadPage />} />
+        <Route path="/impatient" element={<ImpatientPage />} />
       </Routes>
     </Router>
   )

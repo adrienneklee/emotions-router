@@ -28,7 +28,7 @@ function LazyPage() {
 
       {/* Content */}
       <div className="w-full max-w-3xl relative z-10">
-        <h1 className="text-4xl font-bold text-white mb-16 text-center">Shower</h1>
+        <h1 className="text-4xl font-bold text-white mb-16 text-center">Cold Shower</h1>
         <div className="mt-16 text-center">
           <a 
             href="/" 
