@@ -106,8 +106,8 @@ function OverthinkingPage() {
   }
 
   return (
-    <div className="min-h-screen bg-purple-500 flex items-center justify-center p-4">
-      <div className="w-full max-w-3xl">
+    <div className="min-h-screen bg-[#b8c0ff] flex items-center justify-center p-4">
+      <div className="w-full max-w-4xl">
         <h1 className="text-4xl font-bold text-white mb-8 text-center">Write</h1>
 
         {/* Note Input Form */}
@@ -132,7 +132,7 @@ function OverthinkingPage() {
               <div className="ml-auto">
                 <button
                   type="submit"
-                  className="bg-purple-500 text-white px-4 py-2 rounded-lg hover:bg-purple-600 transition-colors"
+                  className="bg-[#b8c0ff] text-white px-4 py-2 rounded-lg hover:bg-[#a3acff] transition-colors"
                   disabled={!currentNote.trim()}
                 >
                   {editingNote ? 'Save Changes' : 'Save Note'}
@@ -164,7 +164,7 @@ function OverthinkingPage() {
                   <div className="flex gap-2">
                     <button
                       onClick={() => handleEditNote(note)}
-                      className="text-blue-500 hover:text-blue-700 transition-colors"
+                      className="text-[#b8c0ff] hover:text-[#a3acff] transition-colors"
                     >
                       Edit
                     </button>
@@ -186,7 +186,7 @@ function OverthinkingPage() {
         <div className="text-center">
           <a 
             href="/" 
-            className="text-white hover:text-purple-200 font-semibold transition-colors"
+            className="text-white hover:text-[#d8dcff] font-semibold transition-colors"
           >
             ← Back to Emotions
           </a>

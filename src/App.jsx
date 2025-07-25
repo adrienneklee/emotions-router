@@ -6,6 +6,7 @@ import LazyPage from './pages/LazyPage'
 import OverthinkingPage from './pages/OverthinkingPage'
 import SadPage from './pages/SadPage'
 import ImpatientPage from './pages/ImpatientPage'
+import StressedPage from './pages/StressedPage'
 
 function EmotionsButtons() {
   const navigate = useNavigate()
@@ -13,10 +14,10 @@ function EmotionsButtons() {
   const emotions = [
     { name: 'Angry', style: 'bg-[#81b29a] hover:bg-[#6a9781]', route: '/angry' },
     { name: 'Burned out', style: 'bg-[#edafb8] hover:bg-[#e59aa4]', route: '/burned-out' },
-    { name: 'Overthinking', style: 'bg-purple-500 hover:bg-purple-600', route: '/overthinking' },
-    { name: 'Anxious', style: 'bg-red-500 hover:bg-red-600', route: '/anxious' },
-    { name: 'Stressed', style: 'bg-teal-500 hover:bg-teal-600' },
-    { name: 'Sad', style: 'bg-yellow-500 hover:bg-yellow-600', route: '/sad' },
+    { name: 'Overthinking', style: 'bg-[#b8c0ff] hover:bg-[#a3acff]', route: '/overthinking' },
+    { name: 'Anxious', style: 'bg-[#f28482] hover:bg-[#f28482]', route: '/anxious' },
+    { name: 'Stressed', style: 'bg-[#83c5be] hover:bg-[#6eb3ac]', route: '/stressed' },
+    { name: 'Sad', style: 'bg-[#f6bd60] hover:bg-[#f6bd60]', route: '/sad' },
     { name: 'Lazy', style: 'bg-[#5fa8d3] hover:bg-[#4c91bc]', route: '/lazy' },
     { name: 'Impatient', style: 'bg-[#eaac8b] hover:bg-[#e09b77]', route: '/impatient' }
   ]
@@ -52,6 +53,7 @@ function App() {
         <Route path="/overthinking" element={<OverthinkingPage />} />
         <Route path="/sad" element={<SadPage />} />
         <Route path="/impatient" element={<ImpatientPage />} />
+        <Route path="/stressed" element={<StressedPage />} />
       </Routes>
     </Router>
   )

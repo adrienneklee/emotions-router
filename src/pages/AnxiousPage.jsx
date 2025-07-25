@@ -30,7 +30,7 @@ function AnxiousPage() {
   }, [])
 
   return (
-    <div className="min-h-screen bg-red-500 flex items-center justify-center p-4">
+    <div className="min-h-screen bg-[#f28482] flex items-center justify-center p-4">
       <div className="w-full max-w-3xl">
         <h1 className="text-4xl font-bold text-white mb-16 text-center">Breathe</h1>
         <div className="flex justify-center items-center">

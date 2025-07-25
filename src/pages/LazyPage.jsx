@@ -1,7 +1,23 @@
 function LazyPage() {
   return (
-    <div className="min-h-screen bg-[#5fa8d3] flex items-center justify-center p-4">
-      <div className="w-full max-w-4xl">
+    <div className="min-h-screen bg-[#5fa8d3] flex items-center justify-center p-4 relative overflow-hidden">
+      {/* Rain Animation Container */}
+      <div className="absolute inset-0 pointer-events-none z-0">
+        {Array.from({ length: 100 }).map((_, index) => (
+          <div
+            key={index}
+            className="raindrop absolute w-0.5 h-8 bg-white/30"
+            style={{
+              left: `${Math.random() * 100}%`,
+              top: `${Math.random() * 100}%`,
+              animationDelay: `${Math.random() * 2}s`,
+              opacity: Math.random() * 0.4 + 0.2
+            }}
+          />
+        ))}
+      </div>
+
+      <div className="w-full max-w-4xl relative z-10">
         <h1 className="text-4xl font-bold text-white mb-8 text-center">Cold Shower</h1>
         
         {/* Centered Giphy */}
@@ -13,22 +29,6 @@ function LazyPage() {
               className="w-full h-full object-cover"
             />
           </div>
-        </div>
-
-        {/* Rain Animation Container */}
-        <div className="absolute inset-0 pointer-events-none">
-          {Array.from({ length: 100 }).map((_, index) => (
-            <div
-              key={index}
-              className="raindrop absolute w-0.5 h-8 bg-white/30"
-              style={{
-                left: `${Math.random() * 100}%`,
-                top: `${Math.random() * 100}%`,
-                animationDelay: `${Math.random() * 2}s`,
-                opacity: Math.random() * 0.4 + 0.2
-              }}
-            />
-          ))}
         </div>
 
         {/* Back Link */}

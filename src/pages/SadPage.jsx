@@ -105,14 +105,14 @@ function SadPage() {
   }
 
   return (
-    <div className="min-h-screen bg-yellow-500 flex items-center justify-center p-4">
+    <div className="min-h-screen bg-[#f6bd60] flex items-center justify-center p-4">
       <div className="w-full max-w-3xl">
         <h1 className="text-4xl font-bold text-white mb-8 text-center">Gratitude</h1>
 
         {/* Gratitude Input Form */}
         <form onSubmit={handleSaveGratitude} className="mb-8">
           <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-            <div className="px-4 pt-3 text-sm text-yellow-600 font-medium">
+            <div className="px-4 pt-3 text-sm text-[#f6bd60] font-medium">
               I am grateful for...
             </div>
             <textarea
@@ -134,7 +134,7 @@ function SadPage() {
               <div className="ml-auto">
                 <button
                   type="submit"
-                  className="bg-yellow-500 text-white px-4 py-2 rounded-lg hover:bg-yellow-600 transition-colors"
+                  className="bg-[#f6bd60] text-white px-4 py-2 rounded-lg hover:bg-[#f6bd60] transition-colors"
                   disabled={!currentGratitude.trim()}
                 >
                   {editingGratitude ? 'Save Changes' : 'Save Gratitude'}
@@ -188,7 +188,7 @@ function SadPage() {
         <div className="text-center">
           <a 
             href="/" 
-            className="text-white hover:text-yellow-200 font-semibold transition-colors"
+            className="text-white hover:text-[#f6bd60] font-semibold transition-colors"
           >
             ← Back to Emotions
           </a>
