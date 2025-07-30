@@ -50,10 +50,10 @@ function ImpatientPage() {
                 alt={`Progress from ${image.date}`}
                 className="w-full h-auto"
               />
-              <div className="p-3 bg-white">
+              {/* <div className="p-3 bg-white">
                 <div className="text-sm font-medium text-gray-700">{image.date}</div>
                 <div className="text-xs text-gray-500 mt-1">{image.description}</div>
-              </div>
+              </div> */}
             </div>
           ))}
         </div>
@@ -73,10 +73,10 @@ function ImpatientPage() {
                 alt={`Progress from ${selectedImage.date}`}
                 className="w-auto h-auto max-w-full max-h-[85vh] object-contain"
               />
-              <div className="absolute bottom-0 left-0 right-0 p-4 bg-white bg-opacity-90 backdrop-blur-sm">
+              {/* <div className="absolute bottom-0 left-0 right-0 p-4 bg-white bg-opacity-90 backdrop-blur-sm">
                 <div className="text-lg font-medium text-gray-800">{selectedImage.date}</div>
                 <div className="text-gray-600 mt-1">{selectedImage.description}</div>
-              </div>
+              </div> */}
               <button
                 className="absolute top-2 right-2 text-white hover:text-gray-200 bg-black bg-opacity-50 hover:bg-opacity-70 rounded-full p-2 transition-all duration-200"
                 onClick={() => setSelectedImage(null)}

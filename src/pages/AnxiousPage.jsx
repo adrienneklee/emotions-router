@@ -19,7 +19,7 @@ function AnxiousPage() {
     const startTimer = setTimeout(() => {
       setHasStarted(true)
       breatheIn()
-    }, 1000)
+    }, 800)
 
     // Cleanup on unmount
     return () => {
@@ -43,7 +43,7 @@ function AnxiousPage() {
             `}
           >
             <div className="text-white text-xl font-light">
-              {!hasStarted ? 'breathe' : isBreathing ? 'Inhale...' : 'Exhale...'}
+              {!hasStarted ? 'Breathe' : isBreathing ? 'Inhale...' : 'Exhale...'}
             </div>
           </div>
         </div>
